@@ -1,0 +1,196 @@
+small {
+    opacity: .6;
+}
+
+.text-muted {
+    opacity: .6;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.y-center {
+    display: flex;
+    align-items: center;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.va-t {
+    vertical-align: top;
+}
+
+.va-m {
+    vertical-align: middle;
+}
+
+.va-b {
+    vertical-align: bottom;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/**
+* 状态点
+*/
+
+.global-tag {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+
+/*
+* 导航黄点
+*/
+
+.nav-message {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    background: #FF6600;
+    margin-left: 2px;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+//处理firefox箭头问题
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+// 字母、数字换行
+.line-break {
+    white-space: normal;
+    word-break: break-all;
+}
+
+// 表单必填项
+label.required::before {
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 14px;
+	color: #f5222d;
+}
+
+.ant-table-expanded-row-level-1{
+    color:#333;
+}
+.ant-table-expanded-row-level-1:hover td{
+    background: #FFF!important;
+}
+tr.ant-table-expanded-row, tr.ant-table-expanded-row:hover{
+    background: #fff;
+    // -webkit-user-select: none;
+    // user-select: none;
+}
+
+/*ant-design 性别头标颜色*/
+.anticon-woman{
+    color:#D1098D;
+}
+.anticon-man{
+    color:#00AAE7;
+}
+
+
+// 这里需要斟酌一下
+table{
+    table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+}
+
+td{
+    width:100%;
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+//字体颜色
+.f-danger {
+    color: @danger;
+}
+.f-success {
+    color: @success;
+}
+.f-info {
+    color: #0099FF;
+}
+.f-warning {
+    color: #faad14;
+}
+.f-disabled {
+    color: #999;
+}
+.f-nc {
+    color: #333;
+}
+
+

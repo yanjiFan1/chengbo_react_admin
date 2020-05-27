@@ -1,0 +1,100 @@
+// @import "../../node_modules/antd/lib/style/themes/default.less";
+// @import "~antd/dist/antd.less";   // 引入官方提供的 less 样式入口文件
+@import "variables";
+@import "global";
+@import "function";
+@import "scroll";
+@import "icons";
+@import "button";
+@import "modal";
+@import 'card';
+@import "menu";
+@import "img";
+@import "table";
+@import "utils-color";
+@import "utils-size";
+@import "person.less";
+
+// 注意：
+// 除了白色 和黑色 意外 不准用其他颜色
+// font-size 不准定义其他font-size
+body{
+    min-width: 1280px;
+}
+
+#root {
+    height: 100%;
+    font-family: '微软雅黑';
+}
+.ant-layout {
+    height: 100%;
+    &-header {
+        height: 50px;
+        line-height: 50px;
+        padding:0 0 0 10px;
+        color: #fff;
+        overflow: hidden;
+        .logo {
+            float: left;
+            .sys-title{
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+        span{
+
+            margin-left: 12px;
+        }
+    }
+
+    &-content {
+        margin: 0 12px;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    &-footer {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 !important;
+    }
+    &-sider{
+        background: #fff !important;
+    }
+}
+
+.gutter-ats {
+    .ant-row {
+        >div {
+            background: transparent;
+            border: 0;
+        }
+    }
+    .gutter-box {
+        padding: 4px 0;
+    }
+}
+
+:global {
+    a{
+        color: @link;
+        text-decoration: none;
+        &:visited,&:active,&:hover{
+            text-decoration: none !important;
+        }
+    }
+    .icon{
+        margin:0 2px;
+        font-size: 14px;
+    }
+}
+
+// 人员控件不展示部门
+.ant-select-selection__choice__content .u-dep {
+	display: none !important;
+}
+
+textarea {
+	word-break: break-all;
+}
+
