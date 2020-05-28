@@ -1,0 +1,31 @@
+
+.w-variant(@size) {
+  width:  @size;
+  height: @size;
+  line-height: @size;
+  display: inline-block;
+}
+
+// 生成12px ->64px step  2px w-i
+.generate-width(@n, @i: 12) when (@i =< @n) {
+  .w-@{i} {
+    width:  1px*@i;
+    height: 1px*@i;
+    line-height: 1px*@i;
+    display: inline-block;
+  }
+  .generate-width(@n, (@i + 2));
+}
+
+.generate-width(64);
+
+
+// font-size:10px -> 20px
+.generate-text-size(@n, @i: 10) when (@i =< @n) {
+  .text-@{i} {
+    font-size: 1px*@i;
+  }
+  .generate-text-size(@n, (@i + 2));
+}
+
+.generate-text-size(28);

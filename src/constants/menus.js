@@ -1,0 +1,41 @@
+export const menus = [{
+    "id": 1,
+    "name": "首页",
+    "parentId": 0,
+    "fronType": "route",
+    "frontLink": "/app/index",
+    "frontIcon": "icon-shouye",
+    "sub": []
+}, {
+    "id": 2,
+    "name": "登录",
+    "parentId": 0,
+    "fronType": "route",
+    "frontLink": "/app/login",
+    "frontIcon": "icon-houxuanren",
+    "sub": [{
+        "id": 3,
+        "name": "抽奖",
+        "parentId": 2,
+        "fronType": "route",
+        "frontLink": "/app/login",
+        "frontIcon": null,
+        "sub": []
+    }]
+}, {
+    "id": 3,
+    "name": "小程序",
+    "parentId": 0,
+    "fronType": "route",
+    "frontLink": "/app/alipay",
+    "frontIcon": "icon-shouye",
+    "sub": []
+}, {
+    "id": 4,
+    "name": "第四",
+    "parentId": 0,
+    "fronType": "route",
+    "frontLink": "/app/four",
+    "frontIcon": "icon-shouye",
+    "sub": []
+}]

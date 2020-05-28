@@ -1,0 +1,16 @@
+{
+  "id": "1492074",
+  "name": "fivezerofive后台系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "fivezerofive后台系统",
+  "glyphs": [
+    {
+      "icon_id": "8084570",
+      "name": "权限",
+      "font_class": "quanxian",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}
