@@ -43,11 +43,20 @@ export default class BasicTable extends Component {
             expandIconColumnIndex = -1, 
             pagination = {
                 total: 0
-            }
+            },
+            headerTitle = ''
         } = this.props;
         return (
-            <div>
-                <Table {...this.props} local={this.state.local} pagination={false} rowKey={rowKey} expandIconColumnIndex={expandIconColumnIndex} />
+            <div className="page-layout-content">
+                {
+                    headerTitle && 
+                    <div class="m-table-header">
+                      <div class="m-table-header-title">
+                        <div class="u-title-text">{headerTitle}</div>
+                      </div>
+                    </div>
+                }
+                <Table {...this.props} bordered local={this.state.local} pagination={false} rowKey={rowKey} expandIconColumnIndex={expandIconColumnIndex} />
                 {pagination.total > 0 && <CustomPagination {...pagination} change={this.opChageTable} />}
                 {
                     this.state.clientWidth < 1920 &&

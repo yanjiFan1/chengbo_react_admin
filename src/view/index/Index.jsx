@@ -119,7 +119,7 @@ class Index extends Component {
         return (
             <div className="gutter-ats">
                 <Breadcrumb first="首页" secord="aaa" />
-                <BasicTable pagination={params} dataSource={list} columns={this.columns} rowKey="id" changeTable={this.changeTable  } style={{ tableLayout:'fixed'}}/>
+                <BasicTable pagination={params} headerTitle="我是首页" dataSource={list} columns={this.columns} rowKey="id" changeTable={this.changeTable  } style={{ tableLayout:'fixed'}}/>
             </div>
         )
     }

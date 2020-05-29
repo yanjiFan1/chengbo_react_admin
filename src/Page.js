@@ -13,8 +13,8 @@ export default () => {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" render={() => <Redirect to="/app/index" push />} />
-                <Route path="/app" component={App} />
+                <Route exact path="/" render={() => <Redirect to="/index" push />} />
+                <Route path="/" component={App} />
                 <Route path="/404" name ="404" component={LazyLoad(E404)} />
                 <Route path="/405" name ="405" component={LazyLoad(E405)} />
                 <Route path="/403" name ="403" component={LazyLoad(E403)} />

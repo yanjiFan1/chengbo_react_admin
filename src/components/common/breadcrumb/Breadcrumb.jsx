@@ -14,7 +14,7 @@ class BreadcrumbCustom extends React.Component {
         const textDescription = this.props.textDescription || '';
         return (
             <div style={{position:'relative'}}>
-                <Breadcrumb style={{ margin: '12px 0' }} separator=">">
+                <Breadcrumb style={{ padding: '20px', background: '#fff', boxSizing: 'border-box' }} separator=">">
                     <Breadcrumb.Item><Link to={'/'}>首页</Link></Breadcrumb.Item>
                         {first}
                         {second}

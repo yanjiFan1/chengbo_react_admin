@@ -14,6 +14,8 @@
 @import "utils-color";
 @import "utils-size";
 @import "person.less";
+@import "utils-spacing.less";
+@import "layout.less";
 
 // 注意：
 // 除了白色 和黑色 意外 不准用其他颜色
@@ -26,42 +28,7 @@ body{
     height: 100%;
     font-family: '微软雅黑';
 }
-.ant-layout {
-    height: 100%;
-    &-header {
-        height: 50px;
-        line-height: 50px;
-        padding:0 0 0 10px;
-        color: #fff;
-        overflow: hidden;
-        .logo {
-            float: left;
-            .sys-title{
-                font-weight: 700;
-                font-size: 16px;
-            }
-        }
-        span{
 
-            margin-left: 12px;
-        }
-    }
-
-    &-content {
-        margin: 0 12px;
-        padding: 12px;
-        background: rgba(0, 0, 0, 0);
-    }
-
-    &-footer {
-        height: 48px;
-        line-height: 48px;
-        padding: 0 !important;
-    }
-    &-sider{
-        background: #fff !important;
-    }
-}
 
 .gutter-ats {
     .ant-row {
@@ -89,12 +56,45 @@ body{
     }
 }
 
-// 人员控件不展示部门
-.ant-select-selection__choice__content .u-dep {
-	display: none !important;
-}
-
 textarea {
 	word-break: break-all;
 }
 
+.page-layout-content {
+  padding: 24px 32px;
+  .form-box {
+    .form-item {
+      display: flex;
+      align-items: center;
+      margin-right: 24px;
+      margin-bottom: 12px;
+      color: #17233d;
+      .form-key {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+    .el-date-editor .el-range-separator {
+      line-height: 24px;
+    }
+    .el-input__icon {
+      line-height: 24px;
+    }
+    .el-input__inner {
+      height: 32px;
+      line-height: 32px;
+    }
+  }
+  .el-button {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 16px;
+  }
+  th {
+    background: rgba(245, 245, 245, 1);
+    div {
+      color: #303133;
+      font-weight: bold;
+    }
+  }
+}

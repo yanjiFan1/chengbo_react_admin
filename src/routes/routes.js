@@ -2,22 +2,39 @@
 export const routes = [
 	{
 		name: "登录模块",
-		link: "/app/login",
+		link: "/login",
 		component: 'Login',
 	},
 	{
 		name: "首页",
-		link: "/app/index",
+		link: "/index",
 		component: 'Index',
 	},
 	{
+		name: "配置管理",
+		link: "/configuration",
+		sub: [{
+			name: "用户管理",
+			link: "/configuration/user",
+			component: 'User',
+		},{
+			name: "角色管理",
+			link: "/configuration/role",
+			component: 'Role',
+		},{
+			name: "菜单管理",
+			link: "/configuration/menu",
+			component: 'Menu',
+		}]
+	},
+	{
 		name: "小程序",
-		link: "/app/alipay",
+		link: "/alipay",
 		component: 'Alipay',
 	},
 	{
 		name: "第四页",
-		link: "/app/four",
+		link: "/four",
 		component: 'Four',
   	},
 ]

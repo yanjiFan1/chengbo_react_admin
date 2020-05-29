@@ -23,7 +23,7 @@ class CRouter extends Component {
                 {
                     routes.map(r => {
                         const route = r => {
-                            const Component = AllComponents[r.component];
+                            const Component = r.component && AllComponents[r.component];
                             return (
                                 <Route
                                     key={r.link || r.key}
@@ -36,7 +36,7 @@ class CRouter extends Component {
                         return r.component ? route(r) : r.sub.map(r => route(r));
 					})
                 }
-                <Route exact path="/app/index" component={Index} />
+                <Route exact path="/index" component={Index} />
                 <Route render={() => <Redirect to="/404" />} />
             </Switch>
         )
